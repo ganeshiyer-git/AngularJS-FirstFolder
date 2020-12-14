@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+    <head>
+        <title>  TODO LIST </title>
+        <script src="app.js"></script>
+        <style>
+            .done{color:blueviolet;}
+        </style>
+    </head>
+    <body>
+       <div ng-controller="todoCtrl">
+           <form name="todoform" ng-submit="addtodo()">
+               <input type="text" name="newtodo" ng-model="newtodo">
+               <button ng-disabled="todoform.$invalid"> ADD </button>
+           </form>
+           <button ng-click="completed()"> Completed </button>
+           <ul>
+               <li ng-repeat="todo in todos">
+                   <input type="radio" ng-model="todo.done">
+                  <span ng-class="{'done': todo.done}">{{todo.title}}</span>
+               </li>
+           </ul>
+       </div>
+    </body>
+</html>
