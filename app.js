@@ -9,8 +9,8 @@ app.controller('todoCtrl',function($scope){
         $scope.newtodo=''
     };
     $scope.completed = function(){
-        $scope.todos=$scope.todos.filter(function(task){
-            return !task.done
+        $scope.todos=$scope.todos.filter(function(ttitle){
+            return !title.done
         })
     };
 });
