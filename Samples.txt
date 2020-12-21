@@ -1,2 +1,3 @@
 On 21st Dec at 21:08, I am trying to commit to GitHub
 On 21st Dec at 21.36, I am trying to edit a commit to GitHub
+On 21st Dec at 21.37, I am trying to delete the line
